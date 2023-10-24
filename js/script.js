@@ -61,8 +61,14 @@ const studenti =
 
 
  const targhe = studenti.map((targheEL)=>{
-    return targheEL.name.toUpperCase()
+    return targheEL.name.toUpperCase();
  })
  console.log(targhe);
 
+
+const studMag70 = studenti.filter((studentiEl)=>{
+    return studentiEl.grades > 70;
+})
+
+console.log(studMag70);
 
