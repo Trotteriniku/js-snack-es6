@@ -57,4 +57,12 @@ const studenti =
         name: 'Francesca totti',
         grades: 84
     }
-] 
+]
+
+
+ const targhe = studenti.map((targheEL)=>{
+    return targheEL.name.toUpperCase()
+ })
+ console.log(targhe);
+
+
