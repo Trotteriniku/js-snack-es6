@@ -67,8 +67,16 @@ const studenti =
 
 
 const studMag70 = studenti.filter((studentiEl)=>{
-    return studentiEl.grades > 70;
+    return studentiEl.grades > 70 ;
 })
 
 console.log(studMag70);
+
+const studMag120 = studenti.filter((studentiEl)=>{
+    return studentiEl.grades > 70 && studentiEl.id > 120;
+})
+
+console.log(studMag120);
+
+
 
