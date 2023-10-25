@@ -122,12 +122,30 @@ let biciLegg;
         pesoforCalc = weight
        biciLegg = element.name;
   }
-   
-  
-  
  });
 
 
 const template = `ciao la bici bici più leggera è la ${biciLegg} con un peso di ${pesoforCalc}`
  
  console.log(template);
+
+//  SNACK4
+// creare un array con le squadre di calcio
+const soccerTeam = 
+[
+    {
+        nome : 'JUVE',
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+    {
+        nome : 'BARCELLONA',
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+    {
+        nome : 'CAGLIARI',
+        puntiFatti: 0,
+        falliSubiti: 0
+    }
+]
