@@ -81,25 +81,53 @@ console.log(studMag120);
 // SNACK3
 // creazione lista bici da corsa 
  const raicingBike = 
- [
+ [  
+    {
+        name : 'bici0',
+        weight : 150
+    },
     {
         name : 'bici1',
         weight : 15
     },
     {
-        name : 'bici1',
+        name : 'bici2',
         weight : 30
-    },{
-        name : 'bici1',
-        weight : 45
-    },{
-        name : 'bici1',
-        weight : 60
-    },{
-        name : 'bici1',
-        weight : 75
-    },{
-        name : 'bici1',
-        weight : 90
     },
+    {
+        name : 'bici3',
+        weight : 45
+    },
+    {
+        name : 'bici4',
+        weight : 60
+    },
+    {
+        name : 'bici5',
+        weight : 75
+    },
+    {
+        name : 'bici6',
+        weight : 90
+    }
  ]
+
+let pesoforCalc = 500;
+let biciLegg;
+
+ raicingBike.forEach((element) => {
+ const { weight } = element 
+ 
+  if ( pesoforCalc > weight ) {
+        pesoforCalc = weight
+       biciLegg = element.name;
+  }
+   
+  
+  
+ });
+
+
+const template = `ciao la bici bici più leggera è la ${biciLegg} con un peso di ${pesoforCalc}`
+ 
+ console.log(template);
