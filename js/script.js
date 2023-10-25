@@ -78,5 +78,28 @@ const studMag120 = studenti.filter((studentiEl)=>{
 
 console.log(studMag120);
 
-
-
+// SNACK3
+// creazione lista bici da corsa 
+ const raicingBike = 
+ [
+    {
+        name : 'bici1',
+        weight : 15
+    },
+    {
+        name : 'bici1',
+        weight : 30
+    },{
+        name : 'bici1',
+        weight : 45
+    },{
+        name : 'bici1',
+        weight : 60
+    },{
+        name : 'bici1',
+        weight : 75
+    },{
+        name : 'bici1',
+        weight : 90
+    },
+ ]
