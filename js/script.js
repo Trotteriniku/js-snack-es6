@@ -149,3 +149,19 @@ const soccerTeam =
         falliSubiti: 0
     }
 ]
+
+soccerTeam.forEach((element) => {
+   
+    element.puntiFatti = getRndInteger(1,100)
+    element.falliSubiti = getRndInteger(1,100)
+    let punti = element.puntiFatti
+    let falli =  element.falliSubiti
+    console.log(punti,falli);
+    
+});
+
+const newArray = soccerTeam.filter((element)=>{
+    let {nome,falliSubiti} = element
+     let template =`${nome}, ${falliSubiti}`
+     console.log(template);
+    })
